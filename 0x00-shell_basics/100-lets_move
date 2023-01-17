@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | grep ^[[:upper:]]
+find . -maxdepth 1 -type f -name '[[:upper:]]*' -exec cp {} /directory \;
